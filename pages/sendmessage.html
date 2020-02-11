@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"/>
+        <meta name="HandheldFriendly" content="true">
+        <title>Sign In Event</title>
+        <link rel="stylesheet" href="css/addevent.css" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+        
+    </head>
+    <body>
+        <div class="alumni">
+            <form action="../controller/sendmessagecontroller.php" method="post">
+                <h2 style="color: white">Event Form</h2>
+                <input type="text" name="messagesubject" placeholder="message subject">
+                <br><br>
+                <input type="text" name="messagedesc" placeholder="message Description">
+                <br><br>
+                <input type="text" name="scontact" placeholder="Sender's contact">
+                <br>
+                <input type="text" name="rcontact" placeholder="Reciever's contact">
+                <br>
+               <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>

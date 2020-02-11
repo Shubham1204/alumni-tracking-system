@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1"/>
+        <meta name="HandheldFriendly" content="true">
+        <title>Sign In Event</title>
+        <link rel="stylesheet" href="css/addevent.css" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+        
+    </head>
+    <body>
+        <div class="alumni">
+            <form action="../controller/addeventcontroller.php" method="post">
+                <h2 style="color: white">Event Form</h2>
+                <input type="text" name="eventname" placeholder="Event Name">
+                <br><br>
+                <input type="text" name="eventdesc" placeholder="Event Description">
+                <br><br>
+                <input type="date" name="eventdate" placeholder="Event Date">
+                <br><br>
+                <input type="text" name="eventvenue" placeholder="Event Venue">
+                <br><br>
+                <input type="email" name="eventemail" placeholder="Event Email">
+                <br>
+                <input type="tel" name="eventcontact" placeholder="Event Contact No.">
+                <br>
+                <input type="time" name="eventtime" placeholder="Event Time">
+               <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
