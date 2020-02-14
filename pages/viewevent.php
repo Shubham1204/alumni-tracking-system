@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <title>Dashboard
     </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
-    </style>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
-   <h1>
-   <?php
 
+
+<?php
 include "../controller/config.php"; 
 
 
@@ -21,44 +21,50 @@ $sql = "select eventname,description,email,contact,date,time,venue from event_ms
 $result = mysqli_query($db,$sql) or die("Bad query $sql");
 // echo "Successful";
 ?>
-<h1>Show roles</h1>
-	<table class='table table-bordered'>
-			<thead class='thead-dark'>
-				<tr>
-                    <th>Event Name</th>
-                    <th>Description</th>
-					<th>Email</th>
-                    <th>Contact No.</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Venue</th>
-				</tr>
-			</thead>
-			<tbody>
+<h1>Show Events</h1>
+<section class="blog_area section-padding mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
                 <?php
 while($row = mysqli_fetch_assoc($result)){
 // echo "{$row['username']} {$row['uid']}";
 // }
 // if(mysqli_fetch_assoc($result)){
     ?>
-    <tr>
-    <td><?php echo "{$row['eventname']}" ?></td>
-    <td><?php echo "{$row['description']}" ?></td>
-    <td><?php echo "{$row['email']}" ?></td>
-    <td><?php echo "{$row['contact']}" ?></td>
-    <td><?php echo "{$row['date']}" ?></td>
-    <td><?php echo "{$row['time']}" ?></td>
-    <td><?php echo "{$row['venue']}" ?></td>
-    </tr>
-    <!-- echo "{$row['eventname']}  {$row['description']} {$row['email']} {$row['contact']} {$row['date']} {$row['time']} {$row['venue']}<br>"; -->
-<!-- //    echo ' <input type="text" name="cllg" id="cllg" value='{$row['username']}'>'; -->
-<!-- // } else{ -->
-    <!-- // echo "cllg list empty"; -->
+   <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="../images/m3.jpg" alt="">
+                                <a href="#" class="blog_item_date pb-5">
+                                    <!-- <h1></h1> -->
+                                    <p><?php echo "{$row['date']}" ?></p>
+                                    <h1></h1>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <p class="d-inline-block">
+                                    <h2><?php echo "{$row['eventname']}" ?></h2>
+                                </p>
+                                <p><?php echo "{$row['description']}" ?></p>
+                                <ul class="blog-info-link">
+                                    <li>Email: <?php echo "{$row['email']}" ?></li>
+                                    <li>Contact: <?php echo "{$row['contact']}" ?></li>
+                                    <li>Time: <?php echo "{$row['time']}" ?></li>
+                                    <li>Venue: <?php echo "{$row['venue']}" ?></li>
+                                </ul>
+                            </div>
+                        </article>
     <?php
 }
 ?>
-</tbody>
-</table>
+                     
+                     </div>
+                </div>
+            </div>
+        </div>
+</section>
 <?php 
 // Close connection
 mysqli_close($db);

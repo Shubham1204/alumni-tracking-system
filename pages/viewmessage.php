@@ -6,9 +6,7 @@
     <title>Dashboard
     </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
-    </style>
+    <link rel="stylesheet" href="../css/email.css">
 </head>
 <body>
    <h1>
@@ -20,37 +18,56 @@ include "../controller/config.php";
 $sql = "select messagesubject,description,scontact,rcontact from message_mst";
 $result = mysqli_query($db,$sql) or die("Bad query $sql");
 // echo "Successful";?>
-<h1>Show roles</h1>
-	<table class='table table-bordered'>
-			<thead class='thead-dark'>
-				<tr>
-					<th>Message Subject</th>
-					<th>Description</th>
-                    <th>Sender's Contact</th>
-                    <th>Reciever's Contact</th>
-				</tr>
-			</thead>
-			<tbody>
+<center><h1>Show Messages</h1></center>
+<table class="body-wrap">
+    <tr>
+        <td></td>
+        <td class="container" width="600">
+            <div class="content">
+
                 <?php
 while($row = mysqli_fetch_assoc($result)){
-// echo "{$row['username']} {$row['uid']}";
-// }
-// if(mysqli_fetch_assoc($result)){
     ?>
-    <tr>
-    <td><?php echo "{$row['messagesubject']}" ?></td>
-    <td><?php echo "{$row['description']}" ?></td>
-    <td><?php echo "{$row['scontact']}" ?></td>
-    <td><?php echo "{$row['rcontact']}" ?></td>
-    </tr>
-    <!-- echo "{$row['messagesubject']}  {$row['description']} {$row['scontact']} {$row['rcontact']} <br>"; -->
-<!-- //    echo ' <input type="text" name="cllg" id="cllg" value='{$row['username']}'>'; -->
-<!-- // } else{ -->
-    <!-- // echo "cllg list empty"; -->
+
+<table class="main" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="content-wrap">
+<table  cellpadding="0" cellspacing="0">
+<tr>
+                                    <td>
+                                        <img class="img-fluid" src="../images/header.jpg"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                        <h3>Subject: <?php echo "{$row['messagesubject']}" ?></h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                    <?php echo "{$row['description']}" ?>  </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                    To: <?php echo "{$row['rcontact']}" ?>  <br>
+                                    <br>  
+                                    From: <?php echo "{$row['scontact']}" ?> </td>
+                                </tr>
+                             
+</table>
+</td>
+                    </tr>
+                </table>
+
+   
     <?php
 }
  ?>
- </tbody>
+ 
+                </div>
+        </td>
+        <td></td>
+    </tr>
 </table>
 <?php 
 // Close connection
