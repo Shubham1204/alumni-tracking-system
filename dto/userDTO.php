@@ -1,9 +1,9 @@
 <?php
 
-include "rightDTO.php";
+// include "rightDTO.php";
 
 class userDTO{
-    private $userid;
+    // private $userid;
     private $email;
     private $rolename;
     // private $rights = new array($rightDTO);

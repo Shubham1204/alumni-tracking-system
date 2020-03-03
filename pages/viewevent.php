@@ -1,4 +1,15 @@
-
+<?php 
+session_start();
+    
+if(isset($_SESSION['email'])){
+}
+// exit;
+// }
+else{
+    header( "location: notlogin.html");
+    
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +22,7 @@
     <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
-
+<?php include"header.php" ?>
 
 <?php
 include "../controller/config.php"; 

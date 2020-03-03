@@ -15,16 +15,16 @@ $sql = "insert into message_mst (messagesubject,description,scontact,rcontact) v
 $result = mysqli_query($db,$sql) or die("Bad query $sql");
 if($result){
     echo "Records added successfully.";
-    // session_start();
+    session_start();
     
-    // if(isset($_SESSION["username"])){
-    // header( "location: ../dashboard.php");
-    // }
+    if(isset($_SESSION["email"])){
+    }
     // exit;
     // }
-    // else{
+    else{
+        header( "location: ../viewmessage.php");
         
-        // }
+        }
         // echo "Record successfully  {$row['username']}";
     }
      else{
