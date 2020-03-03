@@ -2,7 +2,10 @@
 
 It is created using Java, PHP, HTML5, CSS3, JS, Jquery, Bootstrap, MySQL, Tomcat Server, Apache Server.
 
-# ScreenSHots
+# Click on the below image to view Demo
+[![Demo](https://user-images.githubusercontent.com/32667635/69485030-51c90800-0e60-11ea-941b-8273e42d9f0a.png)](http://alumni-tracking.epizy.com/alumni_tracking_system/)
+
+# Screenshots
 
 ## Index Page
 ![1](https://user-images.githubusercontent.com/32667635/75801451-2af46900-5da1-11ea-8fd5-988a9afb15ec.JPG)
