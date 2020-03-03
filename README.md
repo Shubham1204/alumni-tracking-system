@@ -23,5 +23,7 @@ It is created using Java, PHP, HTML5, CSS3, JS, Jquery, Bootstrap, MySQL, Tomcat
 ## Contact Us
 ![10](https://user-images.githubusercontent.com/32667635/74029690-3edfc180-49d3-11ea-9763-109bdbe4fd16.JPG)
 
+### Many other pages pls use this link to view the live web application
+
 # If you enjoy this project, please consider supporting me to continue developing and maintaining it.
 [![paypal-support](https://user-images.githubusercontent.com/32667635/71374712-b3a49b00-25e1-11ea-944e-ff5f4a0b6cfe.jpg)](https://paypal.me/shubhamgupta1204)
