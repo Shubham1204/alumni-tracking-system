@@ -6,7 +6,6 @@ It is created using Java, PHP, HTML5, CSS3, JS, Jquery, Bootstrap, MySQL.
 [![Demo](https://user-images.githubusercontent.com/32667635/69485030-51c90800-0e60-11ea-941b-8273e42d9f0a.png)](http://alumni.ezyro.com/)
 
 # Screenshots
-
 ## Index Page
 ![1](https://user-images.githubusercontent.com/32667635/75801451-2af46900-5da1-11ea-8fd5-988a9afb15ec.JPG)
 ## Login Page
@@ -27,7 +26,7 @@ It is created using Java, PHP, HTML5, CSS3, JS, Jquery, Bootstrap, MySQL.
 ![10](https://user-images.githubusercontent.com/32667635/74029690-3edfc180-49d3-11ea-9763-109bdbe4fd16.JPG)
 
 ### Many other pages pls use this link to view the live web application
-http://alumni.ezyro.com/
+http://alumni.ezyro.com/ (Inactive Currently)
 
 # If you enjoy this project, please consider supporting me to continue developing and maintaining it.
 [![paypal-support](https://user-images.githubusercontent.com/32667635/71374712-b3a49b00-25e1-11ea-944e-ff5f4a0b6cfe.jpg)](https://paypal.me/shubhamgupta1204)
