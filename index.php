@@ -18,8 +18,8 @@
 			<!-- <link href="../css/navbar/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 	</head>
 	<body class="homepage">
+<--- Include Header and footer --->
 <?php include "pages/indexheader.php"; ?>
-	
 <?php include "pages/footer.php"; ?>
 	</body>
 </html>
